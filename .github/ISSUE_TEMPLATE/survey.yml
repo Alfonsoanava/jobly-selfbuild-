@@ -1,0 +1,58 @@
+name: 📝 Community Survey
+description: Share your thoughts to help us build Jolie and earn LeafFlow rewards.
+title: "Survey: [auto]"
+labels: ["survey-response"]
+
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area do you want to improve?
+      options:
+        - Wallet System
+        - Game System
+        - Both (Connected)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: features
+    attributes:
+      label: Which features matter most? (choose up to 3)
+      options:
+        - label: Deposit/Withdraw System
+        - label: NFT Badges
+        - label: LeafFlow Token Rewards
+        - label: Job Matching Quests
+        - label: Auto AI Builder
+        - label: Secure Wallet Tracking
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: What should we build first?
+      options:
+        - Wallet Core
+        - Job Matching Features
+        - Game Rewards
+        - AI Agent Upgrades
+    validations:
+      required: true
+
+  - type: input
+    id: wallet
+    attributes:
+      label: Your LeafFlow Wallet (optional, for token rewards)
+      placeholder: 0x...
+    validations:
+      required: false
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What do you want the next update to include?
+      placeholder: Tell us your thoughts...
+    validations:
+      required: true
